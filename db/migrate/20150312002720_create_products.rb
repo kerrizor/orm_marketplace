@@ -5,6 +5,7 @@ class CreateProducts < ActiveRecord::Migration
       t.decimal :price
       t.integer :inventory
       t.text :description
+      t.text :colors, array: true, default: []
     end
   end
 end

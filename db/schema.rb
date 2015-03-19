@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20150312002720) do
     t.decimal "price"
     t.integer "inventory"
     t.text    "description"
+    t.text    "colors",      default: [], array: true
   end
 
 end
